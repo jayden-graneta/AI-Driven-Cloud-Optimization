@@ -62,5 +62,5 @@ Risks and Mitigation
 Project Board: [GitHub Project Board](https://github.com/users/jayden-graneta/projects/6)  
 Github Repository: [Repo](https://github.com/jayden-graneta/cp395)   
 Dataset Source: [Microsoft Azure VM Trace](https://github.com/Azure/AzurePublicDataset)  
-Problem Statement Draft: [Doc](https://docs.google.com/document/d/1KTfZ4SNzFqNn7WqOOLX753fxQSHxDGjkWysJ-T8aOeY/edit?usp=sharing)
+Problem Statement Draft: [Doc](https://github.com/jayden-graneta/cp395/blob/main/docs/weekly%20tasks/Problem%20Statement%20Draft.md)
 
