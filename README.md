@@ -63,10 +63,11 @@ Existing literature in the field of cloud resource management is categorized by 
 
 ---
 
-### 3. Systematic Search Strategy and Log
-To ensure scholarly grounding, a documented search strategy was executed across four major academic databases. 
+## 🔍 Systematic Literature Search Log
+To ensure scholarly grounding and rigor, a systematic search strategy was executed across major academic databases. This log tracks the queries and results used to build the project's foundational bibliography.
 
 **Table 2: Systematic Literature Search Log**
+
 | Database | Query String | Date | Results | Retained |
 | :--- | :--- | :--- | :--- | :--- |
 | **IEEE Xplore** | `"AI" AND "cloud autoscaling" AND "VM"` | 01/12/26 | 412 | 4 |
@@ -86,7 +87,3 @@ Based on the synthesis of the 12 retained papers, I have identified four specifi
 
 ---
 
-### 5. Status of Literature Review Draft
-* **Draft Status:** 90% Complete.
-* **Sections Finished:** Introduction, Background, Taxonomy, and Gap Identification.
-* **Final Tasks:** Finalizing the "Positioning of Directed Study" section to align with IEEE
