@@ -44,3 +44,49 @@ The project utilizes real-world production traces from Microsoft Azure. This dat
 ├── BIBLIOGRAPHY.md     # Annotated bibliography (12+ papers)
 ├── SEARCH_LOG.md       # Documented database search strategy
 └── README.md           # Project landing page
+
+```
+---
+
+### 2. Taxonomy Overview
+Existing literature in the field of cloud resource management is categorized by the **Control Logic** used to make decisions and the **Temporal Mode** in which those decisions are executed. My project specifically targets the transition from Reactive Heuristics to Proactive Learning.
+
+
+
+**Table 1: Summary of Representative Approaches in Literature**
+| Approach Category | Control Logic | Required Inputs | Primary Metrics | Key Limitations |
+| :--- | :--- | :--- | :--- | :--- |
+| **Reactive** | Heuristic Thresholds | Real-time CPU % | SLA Violation Rate | **Provisioning Lag:** Cannot preemptively handle bursts. |
+| **Proactive (AI)** | Supervised (LSTM) | Historical Traces | Accuracy (RMSE) | **Stability Gap:** Models may trigger excessive scaling. |
+| **Autonomous** | Policy Agents (RL) | System State | Cumulative Reward | **Convergence:** Requires long training/exploration times. |
+| **Cloud-Native** | Micro-scaling | Container Metrics | Response Time | **Noisy Neighbor:** Performance interference on shared CPUs. |
+
+---
+
+### 3. Systematic Search Strategy and Log
+To ensure scholarly grounding, a documented search strategy was executed across four major academic databases. 
+
+**Table 2: Systematic Literature Search Log**
+| Database | Query String | Date | Results | Retained |
+| :--- | :--- | :--- | :--- | :--- |
+| **IEEE Xplore** | `"AI" AND "cloud autoscaling" AND "VM"` | 01/12/26 | 412 | 4 |
+| **ACM Digital Library** | `"Azure traces" AND "workload prediction"` | 01/13/26 | 128 | 3 |
+| **SpringerLink** | `"Reinforcement Learning" AND "Cloud Resource Optimization"` | 01/14/26 | 89 | 2 |
+| **Google Scholar** | `"AI-driven cloud optimization" AND "SLA cost"` | 01/14/26 | ~2,100 | 3 |
+
+---
+
+### 4. Research Gap Identification
+Based on the synthesis of the 12 retained papers, I have identified four specific research gaps that my study will address:
+
+1.  **The Stability-Accuracy Gap:** Most proactive models optimize for prediction accuracy (minimizing RMSE). However, high accuracy often leads to "jitter" (rapid scaling events). This project introduces **Scaling Stability** as a primary success metric.
+2.  **Dataset Realism Gap:** Much of the existing Reinforcement Learning literature relies on the 2011 Google Borg traces. This project addresses the gap by evaluating policies against the modern **2019/2021 Microsoft Azure VM traces**.
+3.  **The Provisioning Latency Realism Gap:** Many simulations assume instant resource availability. My evaluation will incorporate **fixed provisioning delays and cooldowns** to test the robustness of AI under real-world constraints.
+4.  **Baseline Fairness Gap:** AI models are often compared to weak, unoptimized baselines. I will implement a **tuned reactive baseline** to establish a more rigorous and defensible performance gain.
+
+---
+
+### 5. Status of Literature Review Draft
+* **Draft Status:** 90% Complete.
+* **Sections Finished:** Introduction, Background, Taxonomy, and Gap Identification.
+* **Final Tasks:** Finalizing the "Positioning of Directed Study" section to align with IEEE
