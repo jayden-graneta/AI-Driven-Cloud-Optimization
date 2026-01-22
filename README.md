@@ -68,12 +68,11 @@ To ensure scholarly grounding and rigor, a systematic search strategy was execut
 
 **Table 2: Systematic Literature Search Log**
 
-| Database | Query String | Date | Results | Retained |
+| Database | Query String | Date Searched | Results | Papers Used |
 | :--- | :--- | :--- | :--- | :--- |
-| **IEEE Xplore** | `"AI" AND "cloud autoscaling" AND "VM"` | 01/12/26 | 412 | 4 |
-| **ACM Digital Library** | `"Azure traces" AND "workload prediction"` | 01/13/26 | 128 | 3 |
-| **SpringerLink** | `"Reinforcement Learning" AND "Cloud Resource Optimization"` | 01/14/26 | 89 | 2 |
-| **Google Scholar** | `"AI-driven cloud optimization" AND "SLA cost"` | 01/14/26 | ~2,100 | 3 |
+| **Google Scholar** | `“AI-driven autoscaling Microsoft Azure VM traces workload.”` | 01/17/26 | 2,100 | 8 |
+| **IEEE Xplore** | `"AI" AND "cloud autoscaling" AND "VM"` | 01/17/26 | 412 | 1 |
+| **Professor / MyLS**| `n/a (Course Materials / Uploads)` | 01/18/26 | 1 | 1 |
 
 ---
 
