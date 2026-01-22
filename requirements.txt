@@ -1,0 +1,24 @@
+# CP395: AI-Driven Cloud Optimization
+# Environment Specification for Trace-Driven Simulation
+
+# Data Manipulation & Analysis
+pandas>=2.0.0
+numpy>=1.24.0
+scipy>=1.10.0
+
+# Machine Learning & Deep Learning (For Proactive Models)
+torch>=2.0.0          # Primary framework for LSTM/RNN models
+scikit-learn>=1.2.0    # For Baseline models (Linear Regression/Random Forest)
+statsmodels>=0.14.0    # For Time-series decomposition and statistical baselines
+
+# Visualization (For Week 03 Workload Characterization)
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Experiment Tracking & Utilities
+tqdm>=4.65.0           # Progress bars for long simulation runs
+python-dotenv>=1.0.0   # Management of local paths/env variables
+pyyaml>=6.0            # Configuration management for simulation parameters
+
+# Dataset Handling
+pyarrow>=12.0.0        # Efficient reading of large Azure parquet/csv traces
