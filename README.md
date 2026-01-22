@@ -1,7 +1,3 @@
-Here is the complete, formatted code for your README.md file. You can copy everything from the box below and paste it directly into your GitHub repository.
-
-Markdown
-
 # AI-Driven Cloud Optimization (CP395)
 ### Directed Study | Wilfrid Laurier University
 **Student:** Jayden Rey Graneta  
