@@ -1,4 +1,18 @@
+# Ignore the virtual environment folder
 venv/
+.venv/
+env/
+
+# Ignore large raw data files (Azure traces)
+data/*.csv
+data/*.gz
+data/*.zip
+
+# Keep the data folder structure but ignore the content
+!data/.gitkeep
+
+# Ignore python cache and local IDE settings
 __pycache__/
-*.pyc
-data/cleaned_workload.csv
+.vscode/
+.idea/
+.DS_Store
