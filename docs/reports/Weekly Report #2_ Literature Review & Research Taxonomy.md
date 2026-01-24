@@ -59,4 +59,4 @@ While searching for academic peer-reviewed papers related to my problem scope an
 Project Board: [GitHub Project Board](https://github.com/users/jayden-graneta/projects/6)  
 Github Repository: [Repo](https://github.com/jayden-graneta/cp395)   
 Annotated bibliography: [Doc](https://github.com/jayden-graneta/cp395/blob/main/docs/weekly%20tasks/Annotated%20bibliography.md)  
-Milestone: [Literature Review](https://docs.google.com/document/d/1MlB0gtym_PEluWSgcpbx1nRtOxONUdl_Fc9gtdf_MkU/edit?usp=sharing) 
+Milestone: [Literature Review](https://github.com/jayden-graneta/cp395/blob/main/docs/milestones/Milestone%2001_%20Literature%20Review.md) 
