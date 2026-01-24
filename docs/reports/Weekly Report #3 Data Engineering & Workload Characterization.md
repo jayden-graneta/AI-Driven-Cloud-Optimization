@@ -51,7 +51,7 @@ Status:
 
 **Next Week Plan:**
 
-* **Baseline Choice:** Select a Random Forest Regressor as the initial baseline model to handle the bimodal load skew identified in Task 2\.  
+* **Baseline Choice:** To address the bimodal load skew found in Task 2, choose a Random Forest Regressor as the first baseline model.
 * **Model Implementation:** Implement the baseline in src/model.py and establish evaluation metrics.  
 * **Time-Series Analysis:** Expand the EDA to include time-series plots of VM arrivals and execution durations to refine the prediction window.
 
