@@ -12,6 +12,12 @@ This research project focuses on the development and evaluation of AI-driven aut
 ### 🎯 Research Problem
 **Problem Statement:** *"Can an AI-driven autoscaling policy reduce SLA violations and resource over-provisioning compared to a threshold-based baseline when evaluated using Microsoft Azure public workload traces?"*
 
+### 🛠 Tech Stack
+* **Language:** Python
+* **Data Manipulation:** Pandas, NumPy
+* **Visualization:** Matplotlib, Seaborn
+* **Environment:** Virtual Environments (`venv`), Git/GitHub
+
 ---
 
 ## 📊 Dataset & Metrics
@@ -38,6 +44,7 @@ The project utilizes real-world production traces from Microsoft Azure. This dat
 │   └── milestones/     # Literature Review and Final Papers
 ├── src/                # Simulation engine and AI model code
 ├── BIBLIOGRAPHY.md     # Annotated bibliography (12+ papers)
+├── venv/               # Local virtual environment (ignored)
 ├── SEARCH_LOG.md       # Documented database search strategy
 └── README.md           # Project landing page
 
