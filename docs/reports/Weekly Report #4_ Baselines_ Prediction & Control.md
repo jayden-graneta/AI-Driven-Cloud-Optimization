@@ -66,20 +66,22 @@ Status:
 * **LLM Integration Prep:** Begin researching the bounded LLM role for configuration reasoning.
 
 **Terminal returns:**  
-\# Task 1: Data Ingestion & Filtering  
-PS C:\\\> python src/data\_loader.py  
-\--- Reading dataset and calculating burstiness \---  
-\--- Success\! Created data/week4\_bursty\_subset.csv with 19614 records \---  
-\--- Filtered for the top 500 burstiest VMs out of 241490 total \---
+```bash
+# Task 1: Data Ingestion & Filtering
+$ python src/data_loader.py
+--- Reading dataset and calculating burstiness ---
+--- Success! Created data/week4_bursty_subset.csv with 19614 records ---
+--- Filtered for the top 500 burstiest VMs out of 241490 total ---
 
-\# Task 2: Baseline Model Generation  
-PS C:\\\> python src/baseline\_model.py  
-\--- Generating Sliding Window Baselines \---  
-\--- Task 2 Complete: Created data/task2\_baselines.csv \---
+# Task 2: Baseline Model Generation
+$ python src/baseline_model.py
+--- Generating Sliding Window Baselines ---
+--- Task 2 Complete: Created data/task2_baselines.csv ---
 
-\# Task 3: Simulation Engine Execution  
-PS C:\\\> python src/simulation\_engine.py  
-\--- Task 3 Complete: Simulation Results Saved —
+# Task 3: Simulation Engine Execution
+$ python src/simulation_engine.py
+--- Task 3 Complete: Simulation Results Saved ---
+```
 
 **Links:**  
 Project Board: [GitHub Project Board](https://github.com/users/jayden-graneta/projects/6)  
