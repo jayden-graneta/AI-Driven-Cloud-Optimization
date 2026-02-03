@@ -1,18 +1,29 @@
-# Ignore the virtual environment folder
+# CP395 Project Gitignore
+
+# Python Environment
 venv/
-.venv/
-env/
+__pycache__/
+*.py[cod]
+.env
 
-# Ignore large raw data files (Azure traces)
-data/*.csv
-data/*.gz
-data/*.zip
+# Data Management (Block huge raw traces >100MB)
+data/cleaned_vmtable.csv
+data/vm_cpu_readings-file-1-of-195.csv
+data/vmtable.csv
+data/raw_azure.csv
+data/raw/
+data/*.csv.gz
+data/*.parquet
 
-# Keep the data folder structure but ignore the content
+# Ignore intermediate simulation results to keep repo clean
+data/task2_baselines.csv
+data/task3_simulation_results.csv
+
+# Allowed small research subsets
+!data/week4_bursty_subset.csv
 !data/.gitkeep
 
-# Ignore python cache and local IDE settings
-__pycache__/
-.vscode/
-.idea/
+# Visualization & Reports
+# We only ignore specific system files, but keep our figure artifacts
 .DS_Store
+Thumbs.db
