@@ -20,6 +20,7 @@ Status:
 
 **Decisions Made**  
 **Execution Log:**  
+```bash
 \# Task 1: Data Ingestion & Filtering  
 python src/data\_loader.py  
 \--- Reading dataset and calculating burstiness \---  
@@ -34,6 +35,7 @@ python src/baseline\_model.py
 \# Task 3: Simulation Engine Execution  
 python src/simulation\_engine.py  
 \--- Task 3 Complete: Simulation Results Saved —
+```
 
 **Interpretation:** The isolation of 500 bursty VMs provides a high-variance environment necessary for testing RL agents. The baseline simulation confirms that a reactive 70/20 threshold policy results in a \~14% SLA violation rate due to the 300-second provisioning delay. This failure of the baseline justifies the move to proactive AI-driven methods.
 
