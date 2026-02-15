@@ -1,0 +1,10 @@
+simulation:
+  seed: 42
+  provisioning_delay_steps: 1
+  cooldown_steps: 2
+  min_capacity: 1.0
+
+policy:
+  threshold_high: 0.70
+  threshold_low: 0.20
+  step_size: 0.5
