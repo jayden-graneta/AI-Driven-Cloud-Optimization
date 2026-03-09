@@ -95,3 +95,10 @@ Based on the synthesis of the 12 retained papers, I have identified four specifi
 2. **Dataset Realism Gap:** Much of the existing Reinforcement Learning literature relies on the 2011 Google Borg traces. This project addresses the gap by evaluating policies against the modern **2019/2021 Microsoft Azure VM traces**.
 3. **The Provisioning Latency Realism Gap:** Many simulations assume instant resource availability. My evaluation incorporates **fixed provisioning delays ($L=300s$) and cooldowns** to test the robustness of AI under real-world constraints.
 4. **Baseline Fairness Gap:** AI models are often compared to weak, unoptimized baseli
+
+---
+
+### **Summary of Updates**
+* **Metrics:** Added the formal **System Reward ($R$)** definition to match your new simulation logic.
+* **Status:** Added a "Week 08" status section to highlight the **Proactive Selection Logic** and the $L=300s$ delay.
+* **Benchmarks:** Integrated the actual results from your latest `simulation_engine.py` run and the ARIMA/LSTM comparison.
