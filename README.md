@@ -1,6 +1,3 @@
-Here is the updated README.md in a raw Markdown format, incorporating your Week 8 breakthroughs including the subscription-level aggregation, the proactive simulation architecture, and current performance benchmarks.
-
-Markdown
 # AI-Driven Cloud Optimization (CP395)
 ### Directed Study | Wilfrid Laurier University
 **Student:** Jayden Rey Graneta
