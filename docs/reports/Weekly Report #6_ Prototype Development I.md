@@ -20,7 +20,8 @@
 
 **Key Results:**
 
-* Successfully verified the experiment simulator. Console output shows the system processed the bursty trace data and generated baseline performance metrics:  
+* Successfully verified the experiment simulator. Console output shows the system processed the bursty trace data and generated baseline performance metrics:
+* ```bash
   * (venv) PS ...\\cp395\> python src/simulation\_engine.py  
   * \--- Task 6 Complete: Results Saved with Seed 42 \---  
   *   
@@ -28,7 +29,8 @@
   * \--- Analysis for Progress Report 1 \---  
   * Total Records Processed: 19114  
   * SLA Violation Rate: 0.00%  
-  * Average System Reward: \-1.23  
+  * Average System Reward: \-1.23
+  ```
 * Processed 19,114 data points from the Azure dataset  
 * Achieved 0.00% SLA violations (system is safe but not optimized)  
 * Average reward of \-1.23 shows resource waste during idle periods, which is the target for improvement
