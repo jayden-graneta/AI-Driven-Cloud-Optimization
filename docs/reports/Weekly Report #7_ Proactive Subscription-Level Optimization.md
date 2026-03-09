@@ -23,6 +23,7 @@
 Successfully verified the data aggregation and the AI model initialization. Console output confirms the environment is locked and the model is ready for training:
 
 PowerShell  
+```bash
 (venv) PS ...\\cp395\> python src/data\_aggregation\_v2.py  
 Mapping VMs to synthetic Subscription clusters...  
 Success\! Created 51 subscription clusters.  
@@ -31,6 +32,7 @@ File saved to: data/task7\_subscription\_aggregated.csv
 (venv) PS ...\\cp395\> python src/proactive\_lstm.py  
 Model initialized: Ready to predict t+1 (5-minute lead time)  
 \--- Task 7 Preliminary: Environment Stable with Seed 42 \---
+```
 
 * 51 Unique Workload Signals: Provides the high-fidelity data needed to move beyond the current \-1.23 reward baseline.  
 * Verified Lead-Time: The model is mathematically aligned to the 300s (5-minute) provisioning delay, enabling "pre-emptive" scaling.
