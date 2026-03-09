@@ -21,10 +21,11 @@
 Key Results:
 
 * Successfully verified the integration of the proactive controller. The simulation now processes all 51 subscription clusters and outputs a unified performance metric:
-
+```bash
 PS C:\\Users\\jayde\\...\\cp395\> python src/simulation\_engine.py  
 \--- Task 8: Proactive Simulation Complete \---  
 Average System Reward: \-7.8848
+```
 
 * System Reward Benchmarking: The reward of \-7.8848 serves as the new baseline for the aggregated environment.  
 * Lead-Time Accuracy: Verified that the simulator correctly enforces the 300s provisioning delay while receiving **t+1** predictions from the selection module.  
