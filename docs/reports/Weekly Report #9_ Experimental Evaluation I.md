@@ -24,7 +24,7 @@ The primary breakthrough this week was the successful stabilization of the LSTM 
 
 Terminal:
 
-```bash
+```
 
 (venv) PS ...\\cp395\> python src/compare\_models.py
 
