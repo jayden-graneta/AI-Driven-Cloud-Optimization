@@ -25,7 +25,6 @@ The primary breakthrough this week was the successful stabilization of the LSTM 
 Terminal:
 
 ```
-
 (venv) PS ...\\cp395\> python src/compare\_models.py
 
 \--- Comparative Results (Baseline vs Proactive) \---
