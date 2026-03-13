@@ -24,6 +24,8 @@ The primary breakthrough this week was the successful stabilization of the LSTM 
 
 Terminal:
 
+```bash
+
 (venv) PS ...\\cp395\> python src/compare\_models.py
 
 \--- Comparative Results (Baseline vs Proactive) \---
@@ -33,6 +35,7 @@ Moving Average MSE: 36.3726
 ARIMA MSE:          1.8138
 
 Proactive LSTM MSE: 69.5495 (Regularized)
+```
 
 * Improvement: Achieved a 91.2% reduction in MSE compared to the previous regularized attempt (797.8 \-\> 69.5).  
 * Stability: The model now generalizes across the 20% test split of Subscription 0 without losing the signal of workload bursts.
