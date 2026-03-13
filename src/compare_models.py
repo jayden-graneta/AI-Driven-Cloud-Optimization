@@ -1,11 +1,13 @@
 import pandas as pd
 import numpy as np
+import json
+import os
 from sklearn.metrics import mean_squared_error
 from statsmodels.tsa.arima.model import ARIMA
 
 # Load your aggregated subscription data
 df = pd.read_csv('data/task7_subscription_aggregated.csv')
-# Select one Subscription ID to compare models
+# Select Subscription ID 0 for the comparison baseline
 subset = df[df['SubscriptionID'] == 0]['avg_cpu'].values
 
 # Split: 80% train, 20% test
@@ -23,8 +25,14 @@ arima_fit = arima_model.fit()
 arima_pred = arima_fit.forecast(steps=len(test))
 arima_mse = mean_squared_error(test, arima_pred)
 
-print(f"--- Comparative Results ---")
+# 3. Load LSTM Results from JSON
+lstm_mse_display = "[Run your model to get this value]"
+if os.path.exists('data/lstm_results.json'):
+    with open('data/lstm_results.json', 'r') as f:
+        results = json.load(f)
+        lstm_mse_display = f"{results['lstm_mse']:.4f} ({results['status']})"
+
+print(f"\n--- Comparative Results (Baseline vs Proactive) ---")
 print(f"Moving Average MSE: {ma_mse:.4f}")
-print(f"ARIMA MSE: {arima_mse:.4f}")
-# Placeholder for your LSTM MSE result
-print(f"Proactive LSTM MSE: [Run your model to get this value]")
+print(f"ARIMA MSE:          {arima_mse:.4f}")
+print(f"Proactive LSTM MSE: {lstm_mse_display}")
