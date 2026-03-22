@@ -1,0 +1,7 @@
+#To start the Venv use the following script into the terminal
+
+# 1. Bypass the execution policy for this session
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope Process
+
+# 2. Activate the environment
+.\venv\Scripts\Activate.ps1

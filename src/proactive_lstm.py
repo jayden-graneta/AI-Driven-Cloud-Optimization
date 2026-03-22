@@ -94,7 +94,7 @@ y_test_rescaled = scaler.inverse_transform(y_test.reshape(-1, 1))
 
 lstm_mse = mean_squared_error(y_test_rescaled, predictions_rescaled)
 
-print(f"\n--- Week 09 Task 2: Regularized Results ---")
+print(f"\n--- Regularized Results ---")
 print(f"Moving Average MSE: 36.3726")
 print(f"ARIMA MSE (Baseline): 1.8138")
 print(f"NEW Proactive LSTM MSE: {lstm_mse:.4f}")
@@ -109,4 +109,3 @@ with open('data/lstm_results.json', 'w') as f:
     json.dump(results, f)
     print("\nResults saved to data/lstm_results.json")
 
-    print("hello world")

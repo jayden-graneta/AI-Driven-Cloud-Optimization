@@ -98,7 +98,7 @@ def run_simulation():
             
     sim_df = pd.DataFrame(results)
     sim_df.to_csv('data/task8_proactive_results.csv', index=False)
-    print(f"--- Task 8: Proactive Simulation Complete ---")
+    print(f"--- Proactive Simulation Complete ---")
     print(f"Average System Reward: {sim_df['reward'].mean():.4f}")
 
 if __name__ == "__main__":
