@@ -87,4 +87,28 @@ source venv/bin/activate
 
 pip install -r requirements.txt
 
-``
+```
+
+###2. Data Preparation
+The simulation requires aggregated subscription traces. If the processed files are not present in the /data directory, run the aggregation script:
+
+```bash
+python data/preprocess_traces.py
+```
+
+### 3. Training the Proactive LSTM
+To retrain the model using the parameters cited in the research paper (10% Dropout, Early Stopping, and Min-Max Normalization):
+
+```bash
+python src/proactive_lstm.py --train --epochs 100 --batch_size 32
+
+```
+*This script will save the `best_model.pth` in the `/models` directory and log the final Mean Squared Error (MSE) to the console.*
+
+### 4. Executing the Scaling Simulation
+To evaluate the trained model against the 300-second provisioning lag and calculate the final System Reward:
+
+```bash
+python src/simulation_engine.py --model_path models/best_model.pth --latency 300
+```
+
