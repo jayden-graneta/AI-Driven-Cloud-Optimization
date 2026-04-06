@@ -111,4 +111,27 @@ To evaluate the trained model against the 300-second provisioning lag and calcul
 ```bash
 python src/simulation_engine.py --model_path models/best_model.pth --latency 300
 ```
+**Outputs:** The engine will calculate the Average System Reward (-7.8848) and generate a visualization plot (`results_plot.png`) comparing actual demand vs. allocated capacity.
 
+---
+
+## 🔍 Systematic Literature Search Log
+To ensure scholarly rigor, a systematic search was executed across major academic databases.
+
+| Database | Query String | Papers Used |
+| :--- | :--- | :--- |
+| **Google Scholar** | “AI-driven autoscaling Microsoft Azure VM traces workload” | 8 |
+| **IEEE Xplore** | "AI" AND "cloud autoscaling" AND "VM" | 2 |
+| **Course Materials** | N/A (Manual Uploads / Dr. Daraghmeh) | 2 |
+
+---
+
+## 🎯 Research Gap Identification
+This study addresses four specific gaps identified in current literature:
+
+* **The Stability-Accuracy Gap:** Most models minimize RMSE but ignore "jitter." We introduce **Scaling Stability** as a primary metric.
+* **Dataset Realism Gap:** Moving beyond the 2011 Google traces to modern **2019/2021 Microsoft Azure VM traces**.
+* **Provisioning Latency Realism:** Unlike many simulations, we incorporate a **fixed $L=300s$ delay** and cooldown periods to mirror real-world VM spin-up times.
+* **Baseline Fairness:** Comparing AI against optimized statistical baselines rather than arbitrary thresholds.
+
+---
